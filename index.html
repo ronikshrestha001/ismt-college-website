@@ -3,281 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Education Website Template</title>
-
-	<!-- font Awesome CDN link -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-
-	<!-- External CSS -->
+	<meta name="description" content="ISMT College — internationally recognised British degrees in Nepal.">
+	<title>ISMT College | British Degrees in Nepal</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="theme.css">
-
-	<!-- JQuery CDN link -->
+	<link rel="stylesheet" href="redesign.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-<body>
-	<!-- Navigation start -->
-	<nav>
-		<img src="img/sunderland-ismt-partnership.png" class="logo" alt="">
-
-		<div class="navigation">
-			<ul>
-				<i id="menu-close" class="fas fa-times"></i>
-				<li><a href="index.html" class="active">Home</a></li>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="courses.html">Courses</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-
-			<img src="img/menu.png" id="menu-btn" alt="">
-		</div>
+<body class="new-site">
+	<div class="utility-bar"><div><span><i class="fa-solid fa-phone"></i> +977-1-4112122</span><span><i class="fa-solid fa-envelope"></i> info@ismt.edu.np</span></div><a href="#apply">Apply for scholarship <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+	<nav class="site-nav">
+		<a class="brand" href="index.html" aria-label="ISMT College home"><img src="img/sunderland-ismt-partnership.png" class="logo" alt="ISMT College and University of Sunderland partnership"></a>
+		<div class="navigation"><button id="menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button><ul><li class="mobile-close"><button id="menu-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button></li><li><a href="index.html" class="active">Home</a></li><li><a href="about.html">About ISMT</a></li><li><a href="courses.html">Programmes</a></li><li><a href="blog.html">Campus life</a></li><li><a href="contact.html">Contact</a></li><li><a class="nav-apply" href="#apply">Apply now</a></li></ul></div>
 	</nav>
-	<!-- Navigation ends -->
-
-
-	<!-- Hero section starts from here -->
-	<section id="home">
-		<h2>
-			International Degrees. Local Delivery.
-		</h2>
-		<p>
-			ISMT College offers UK-accredited programs in Kathmandu, combining international curricula with structured academic support and industry engagement.
-		</p>
-		<div class="btn">
-			<a href="about.html" class="blue">Discover ISMT</a>
-			<a href="courses.html" class="yellow">Explore Programs</a>
-		</div>
-		<div class="hero-highlights" aria-label="ISMT highlights">
-			<div><strong>UK</strong><span>Accredited learning</span></div>
-			<div><strong>1:1</strong><span>Academic support</span></div>
-			<div><strong>2026</strong><span>Admissions open</span></div>
-		</div>
-	</section>
-	<!-- Hero section ends from here -->
-
-
-	<!-- Features section starts from here -->
-	<section id="features">
-		<h1>Why Study at ISMT?</h1>
-		<p>Structured teaching, industry-informed curricula, and a learning environment focused on academic and professional excellence.</p>
-
-		<div class="fea-base">
-			<div class="fea-box">
-				<i class="fas fa-graduation-cap"></i>
-				<h3>Scholarship Opportunities</h3>
-				<p>
-					Merit- and need-based scholarships are available to support eligible students throughout their studies.
-				</p>
-			</div>
-
-			<div class="fea-box">
-				<i class="fa-solid fa-book-bookmark"></i>
-				<h3>Blended Learning Model</h3>
-				<p>
-					Academic delivery combines on-campus teaching with supported online learning and digital resources.
-				</p>
-			</div>
-
-			<div class="fea-box">
-				<i class="fas fa-award"></i>
-				<h3>UK Degree with Local Support</h3>
-				<p>
-					Students study towards a UK qualification while benefiting from local academic mentoring and guidance.
-				</p>
-			</div>
-		</div>
-	</section>
-	<!-- Features section ends from here -->
-
-
-	<!-- Courses section starts from here -->
-	<section id="course">
-		<h1>Our Academic Portfolio</h1>
-		<p>Programs are designed to provide clear academic progression and relevant industry-oriented skills.</p>
-
-		<div class="course-box">
-			<div class="courses">
-				<div class="details">
-					<span>Business & Management</span>
-					<h6>BA (Hons) International Business Management</h6>
-					<p>Develop analytical, strategic, and managerial capabilities for roles in a wide range of organisations.</p>
-				</div>
-			</div>
-
-			<div class="courses">
-				<div class="details">
-					<span>Computing & IT</span>
-					<h6>BSc (Hons) Computing</h6>
-					<p>Acquire fundamental knowledge in software development, data management, networking, and cloud technologies.</p>
-				</div>
-			</div>
-
-			<div class="courses">
-				<div class="details">
-					<span>Pathway Programs</span>
-					<h6>Foundation & Diploma Pathways</h6>
-					<p>Strengthen academic foundations and prepare for entry into undergraduate degree programmes.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Courses section ends from here -->
-
-
-	<!-- Registration section starts from here -->
-	<section id="registration">
-		<div class="reminder">
-			<p>Admissions</p>
-			<h1>Register Your Interest for the Next Intake</h1>
-
-			<div class="time">
-				<div class="date">Application <br> Support</div>
-				<div class="date">Scholarship <br> Guidance</div>
-				<div class="date">Counselling <br> Sessions</div>
-				<div class="date">Campus <br> Tour</div>
-			</div>
-		</div>
-
-		<div class="form">
-			<h3>Contact the Admissions Office</h3>
-
-			<input type="text" placeholder="Full Name" name="" id="">
-			<input type="email" placeholder="Email Address" name="" id="">
-			<input type="text" placeholder="Contact Number" name="" id="">
-
-			<div class="btn">
-				<a href="#" class="yellow">Submit Form</a>
-			</div>
-		</div>
-	</section>
-	<!-- Registration section ends from here -->
-
-
-	<!-- Experts section starts from here -->
-	<section id="experts">
-		<h1>Learn From Experienced Faculty</h1>
-		<p>Our teaching team blends academic expertise with real industry experience so you get the best of both worlds.</p>
-		<div class="expert-box">
-			<div class="profile">
-				<h6>Computing Faculty</h6>
-				<p>Specialists in software development, databases, networking, and emerging technologies.</p>
-				<div class="pro-links">
-					<i class="fab fa-facebook"></i>
-					<i class="fab fa-instagram"></i>
-					<i class="fab fa-linkedin-in"></i>
-				</div>
-			</div>
-
-			<div class="profile">
-				<h6>Business & Management Faculty</h6>
-				<p>Academics and practitioners with experience in strategy, marketing, and entrepreneurship.</p>
-				<div class="pro-links">
-					<i class="fab fa-facebook"></i>
-					<i class="fab fa-instagram"></i>
-					<i class="fab fa-linkedin-in"></i>
-				</div>
-			</div>
-
-			<div class="profile">
-				<h6>Student Support & Mentors</h6>
-				<p>Advisors who help you with academic planning, careers, and personal development.</p>
-				<div class="pro-links">
-					<i class="fab fa-facebook"></i>
-					<i class="fab fa-instagram"></i>
-					<i class="fab fa-linkedin-in"></i>
-				</div>
-			</div>
-
-			<div class="profile">
-				<h6>Industry Guests</h6>
-				<p>Regular guest lectures and sessions from professionals and alumni working around the world.</p>
-				<div class="pro-links">
-					<i class="fab fa-facebook"></i>
-					<i class="fab fa-instagram"></i>
-					<i class="fab fa-linkedin-in"></i>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Experts section ends from here -->
-
-	<!-- Footer section starts from here -->
-	<footer>
-		<div class="footer-col">
-			<h3>Programs</h3>
-			<li><a href="courses.html">Undergraduate Degrees</a></li>
-			<li><a href="courses.html">Computing & IT</a></li>
-			<li><a href="courses.html">Business & Management</a></li>
-			<li><a href="courses.html">Pathway Programs</a></li>
-		</div>
-
-		<div class="footer-col">
-			<h3>Admissions</h3>
-			<li><a href="#registration">How to Apply</a></li>
-			<li>Scholarships & Support</li>
-			<li>Fees & Financing</li>
-			<li>Entry Requirements</li>
-		</div>
-
-		<div class="footer-col">
-			<h3>Student Life</h3>
-			<li>Clubs & Activities</li>
-			<li>Events & Workshops</li>
-			<li>Career Services</li>
-			<li>Alumni Network</li>
-		</div>
-
-		<div class="footer-col">
-			<h3>Contact</h3>
-			<li>Tinkune, Kathmandu, Nepal</li>
-			<li>+977-1-XXXXXXX</li>
-			<li>admissions@ismt.edu.np</li>
-			<li><a href="contact.html">Contact Page</a></li>
-		</div>
-
-		<div class="footer-col">
-			<h3>Stay Updated</h3>
-			<p>Get updates about new intakes, events, and scholarship opportunities.</p>
-
-			<div class="subscribe">
-				<input type="email" placeholder="Your email address">
-				<a href="#" class="yellow">SUBSCRIBE</a>
-			</div>
-		</div>
-
-		<div class="copyright">
-			<p>
-				© 2025 ISMT College. All rights reserved.
-			</p>
-			<div class="pro-links">
-				<i class="fab fa-facebook"></i>
-				<i class="fab fa-instagram"></i>
-				<i class="fab fa-linkedin-in"></i>
-			</div>
-		</div>
-	</footer>
-	<!-- Footer section ends from here -->
-
-	<script>
-		// Show menu links on burger click
-		$('#menu-btn').click(function(){
-			$('nav .navigation ul').addClass('active')
-		});
-
-		// Hide navbar on click function
-		$('#menu-close').click(function(){
-			$('nav .navigation ul').removeClass('active')
-		});
-
-		// Navbar scroll effect
-		$(window).scroll(function(){
-			if($(window).scrollTop() > 50){
-				$('nav').addClass('scrolled');
-			} else {
-				$('nav').removeClass('scrolled');
-			}
-		});
-	</script>
+	<main>
+		<section class="new-hero"><div class="hero-copy"><p class="eyebrow light">British degrees. Nepal’s next generation.</p><h1>Make your next move <em>global.</em></h1><p class="hero-lead">Build practical knowledge, confidence and an international outlook through career-focused British degree programmes at ISMT College.</p><div class="hero-actions"><a class="button button-gold" href="courses.html">Explore programmes <i class="fa-solid fa-arrow-right"></i></a><a class="text-link light" href="#why-ismt">Why choose ISMT <i class="fa-solid fa-arrow-down"></i></a></div></div><div class="hero-note"><span>Established</span><strong>2011</strong><p>International education, close to home.</p></div></section>
+		<section class="stats-band" aria-label="ISMT highlights"><div><strong>1500<span>+</span></strong><p>students enrolled at ISMT</p></div><div><strong>7</strong><p>undergraduate & postgraduate programmes</p></div><div><strong>5</strong><p>campuses across Nepal</p></div><div><strong>UK</strong><p>academic partnerships and qualifications</p></div></section>
+		<section class="intro-section" id="why-ismt"><div class="section-intro"><p class="eyebrow">Your education, in motion</p><h2>A better way to begin a bigger future.</h2></div><div class="intro-copy"><p>At ISMT, you can pursue internationally recognised qualifications in a supportive local learning community. From hands-on projects to professional guidance, every part of the experience is designed to help you become ready for what comes next.</p><a class="text-link" href="about.html">Discover the ISMT experience <i class="fa-solid fa-arrow-right"></i></a></div></section>
+		<section class="programme-section" id="programmes"><div class="section-heading"><div><p class="eyebrow">Find your direction</p><h2>Programmes made for the world of work.</h2></div><a class="button button-outline" href="courses.html">View all programmes <i class="fa-solid fa-arrow-right"></i></a></div><div class="programme-grid"><a class="programme-card featured" href="course-inner.html"><span class="programme-number">01</span><div><p>Undergraduate</p><h3>BSc (Hons) Computer Systems Engineering (IT)</h3><span class="card-arrow"><i class="fa-solid fa-arrow-up-right"></i></span></div></a><a class="programme-card" href="course-inner.html"><span class="programme-number">02</span><div><p>Undergraduate</p><h3>BA (Hons) Business and Management</h3><span class="card-arrow"><i class="fa-solid fa-arrow-up-right"></i></span></div></a><a class="programme-card" href="course-inner.html"><span class="programme-number">03</span><div><p>Undergraduate</p><h3>BSc (Hons) International Tourism & Hospitality Management</h3><span class="card-arrow"><i class="fa-solid fa-arrow-up-right"></i></span></div></a><a class="programme-card dark" href="course-inner.html"><span class="programme-number">04</span><div><p>Postgraduate</p><h3>Master of Business Administration</h3><span class="card-arrow"><i class="fa-solid fa-arrow-up-right"></i></span></div></a></div></section>
+		<section class="experience-section"><div class="experience-image"><img src="img/learning-lab.png" alt="Students collaborating in a modern learning lab"><div class="image-label"><span>Learning beyond lectures</span><strong>Real skills.<br>Real momentum.</strong></div></div><div class="experience-copy"><p class="eyebrow">More than a qualification</p><h2>A campus experience that keeps you moving.</h2><p>Learn with people who share your curiosity. Work through ideas in well-equipped labs, take part in campus activities, and develop the professional habits that help your career take shape.</p><ul><li><i class="fa-solid fa-check"></i> Industry-informed learning</li><li><i class="fa-solid fa-check"></i> Academic and career support</li><li><i class="fa-solid fa-check"></i> Spaces to collaborate and create</li></ul><a class="button button-ink" href="blog.html">Explore campus life <i class="fa-solid fa-arrow-right"></i></a></div></section>
+		<section class="partner-section"><p class="eyebrow">Global academic connections</p><h2>Learn locally.<br>Think internationally.</h2><div class="partner-copy"><p>ISMT works with UK academic partners, including the University of Sunderland and Pearson Edexcel, to bring globally relevant study opportunities to Nepal.</p><a class="text-link light" href="about.html">Meet our academic partners <i class="fa-solid fa-arrow-right"></i></a></div></section>
+		<section class="apply-section" id="apply"><div class="apply-copy"><p class="eyebrow">Admissions open</p><h2>Your next chapter starts with a conversation.</h2><p>Tell us where you want to go. Our admissions team can help you explore programmes, entry requirements and scholarship opportunities.</p><div class="apply-contact"><i class="fa-solid fa-phone"></i><span>Talk to admissions<br><strong>+977-1-4112122</strong></span></div></div><form class="apply-form" action="#" method="post"><h3>Request a callback</h3><label>Full name<input type="text" name="name" placeholder="Your name"></label><label>Mobile number<input type="tel" name="phone" placeholder="98XXXXXXXX"></label><label>Programme of interest<select name="programme"><option>Select a programme</option><option>Computing & IT</option><option>Business & Management</option><option>Tourism & Hospitality</option><option>Postgraduate study</option></select></label><button class="button button-gold" type="submit">Send enquiry <i class="fa-solid fa-arrow-right"></i></button><p class="form-note">By submitting, you agree to be contacted by ISMT College.</p></form></section>
+	</main>
+	<footer class="new-footer"><div class="footer-top"><div><img src="img/sunderland-ismt-partnership.png" alt="ISMT College and University of Sunderland partnership"><p>Helping learners in Nepal develop an international outlook since 2011.</p></div><div><h3>Explore</h3><a href="about.html">About ISMT</a><a href="courses.html">Programmes</a><a href="blog.html">Campus life</a><a href="contact.html">Contact us</a></div><div><h3>Study with us</h3><a href="courses.html">Undergraduate study</a><a href="courses.html">Postgraduate study</a><a href="#apply">Scholarships</a><a href="#apply">How to apply</a></div><div><h3>Kathmandu campus</h3><p>Tinkune, Gairigaun,<br>Kathmandu, Nepal</p><a href="tel:+97714112122">+977-1-4112122</a><a href="mailto:info@ismt.edu.np">info@ismt.edu.np</a></div></div><div class="footer-bottom"><span>&copy; 2026 ISMT College. Demo redesign.</span><div><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">LinkedIn</a></div></div></footer>
+	<script>$('#menu-btn').click(function(){ $('.site-nav ul').addClass('active'); }); $('#menu-close').click(function(){ $('.site-nav ul').removeClass('active'); }); $(window).scroll(function(){ $('.site-nav').toggleClass('scrolled', $(window).scrollTop() > 32); });</script>
 </body>
 </html>
