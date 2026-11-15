@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Courses</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="theme.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/sunderland-ismt-partnership.png" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="courses.html" class="active">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Hero section starts from here -->
+	<section id="about-home">
+		<h2>
+			Courses
+		</h2>
+	</section>
+	<!-- Hero section ends from here -->
+
+		<!-- Courses section starts from here -->
+	<section id="course">
+		<h1>Programme Overview</h1>
+		<p>Select from programmes in business and computing, each structured to provide clear learning outcomes and progression routes.</p>
+
+		<div class="course-box">
+			<div onclick="window.location.href='course-inner.html'" class="courses">
+				<div class="details">
+					<span>Business & Management</span>
+					<h6>BA (Hons) International Business Management</h6>
+
+					<div class="star">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+
+						<span>(Program Highlight)</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="courses">
+				<div class="details">
+					<span>Computing & IT</span>
+					<h6>BSc (Hons) Computing</h6>
+
+					<div class="star">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+
+						<span>(Program Highlight)</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="courses">
+				<div class="details">
+					<span>Diploma & Foundation</span>
+					<h6>Pathway & Foundation Programs</h6>
+
+					<div class="star">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+
+						<span>Start Your Journey</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- Courses section ends from here -->
+
+	<!-- Footer section starts from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>Programs</h3>
+			<li><a href="courses.html">Undergraduate Degrees</a></li>
+			<li><a href="courses.html">Computing & IT</a></li>
+			<li><a href="courses.html">Business & Management</a></li>
+			<li><a href="courses.html">Pathway Programs</a></li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Admissions</h3>
+			<li><a href="index.html#registration">How to Apply</a></li>
+			<li>Scholarships & Support</li>
+			<li>Fees & Financing</li>
+			<li>Entry Requirements</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Student Life</h3>
+			<li>Clubs & Activities</li>
+			<li>Events & Workshops</li>
+			<li>Career Services</li>
+			<li>Alumni Network</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Contact</h3>
+			<li>Tinkune, Kathmandu, Nepal</li>
+			<li>+977-1-XXXXXXX</li>
+			<li>admissions@ismt.edu.np</li>
+			<li><a href="contact.html">Contact Page</a></li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Stay Updated</h3>
+			<p>Get updates about new intakes, events, and scholarship opportunities.</p>
+
+			<div class="subscribe">
+				<input type="email" placeholder="Your email address">
+				<a href="#" class="yellow">SUBSCRIBE</a>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>
+				© 2025 ISMT College. All rights reserved.
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+
+		// Navbar scroll effect
+		$(window).scroll(function(){
+			if($(window).scrollTop() > 50){
+				$('nav').addClass('scrolled');
+			} else {
+				$('nav').removeClass('scrolled');
+			}
+		});
+	</script>
+</body>
+</html>

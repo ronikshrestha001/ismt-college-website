@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Single post</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="blog.css">
+	<link rel="stylesheet" href="post.css">
+	<link rel="stylesheet" href="theme.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/logo.svg" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Post body starts from here -->
+	<div id="blog-container">
+		<div class="blogs blogpost">
+			<div class="post">
+				<h3>Studying a UK Degree from Kathmandu</h3>
+				<p>
+					Pursuing a UK degree in Nepal provides access to international curricula and assessment standards without the requirement to relocate. At ISMT, programmes are delivered in accordance with partner university regulations so that learning outcomes, assessment methods, and academic expectations are consistent.
+				</p>
+
+				<p>
+					Students are taught by qualified faculty and study in comparatively small groups, which facilitates interaction, timely feedback, and ongoing academic support. This environment enables students to engage with the material in depth and to develop both subject knowledge and essential study skills.
+				</p>
+
+				<p>
+					In addition to formal teaching, students may participate in co-curricular activities such as clubs, events, and workshops. These activities are intended to complement academic study and to support the development of professional and interpersonal competencies that are relevant to further study and employment.
+				</p>
+
+				<br>
+
+				<a href="#">Read Next</a>
+			</div>
+		</div>
+	</div>
+	<!-- Post body ends from here -->
+
+
+	<!-- Footer section starts from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>Programs</h3>
+			<li><a href="courses.html">Undergraduate Degrees</a></li>
+			<li><a href="courses.html">Computing & IT</a></li>
+			<li><a href="courses.html">Business & Management</a></li>
+			<li><a href="courses.html">Pathway Programs</a></li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Admissions</h3>
+			<li><a href="index.html#registration">How to Apply</a></li>
+			<li>Scholarships & Support</li>
+			<li>Fees & Financing</li>
+			<li>Entry Requirements</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Student Life</h3>
+			<li>Clubs & Activities</li>
+			<li>Events & Workshops</li>
+			<li>Career Services</li>
+			<li>Alumni Network</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Contact</h3>
+			<li>Tinkune, Kathmandu, Nepal</li>
+			<li>+977-1-XXXXXXX</li>
+			<li>admissions@ismt.edu.np</li>
+			<li><a href="contact.html">Contact Page</a></li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Stay Updated</h3>
+			<p>Get updates about new intakes, events, and scholarship opportunities.</p>
+
+			<div class="subscribe">
+				<input type="email" placeholder="Your email address">
+				<a href="#" class="yellow">SUBSCRIBE</a>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>
+				© 2025 ISMT College. All rights reserved.
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+
+		// Navbar scroll effect
+		$(window).scroll(function(){
+			if($(window).scrollTop() > 50){
+				$('nav').addClass('scrolled');
+			} else {
+				$('nav').removeClass('scrolled');
+			}
+		});
+	</script>
+</body>
+</html>
